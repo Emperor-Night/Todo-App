@@ -1,0 +1,48 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+// Variables
+@import "variables";
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+// Custom styles
+
+#customSuccess, #customInfo, #customError {
+  position: fixed;
+  z-index: 1000;
+  right: 15px;
+  top: 15px;
+  opacity: 0.95;
+  transition: all 150ms;
+  color: #fff;
+}
+
+#customSuccess:hover, #customInfo:hover, #customError:hover {
+  box-shadow: 7px 5px 4px #ccc;
+}
+
+#customSuccess {
+  background-color: #4CAF50;
+}
+
+#customInfo {
+  background-color: #31b0d5;
+}
+
+#customError {
+  background-color: #8B0000;
+}
+
+.labelRed {
+  color: red;
+}
+
+.borderRed:focus {
+  border-color: #FF0000;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
+}
